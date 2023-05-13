@@ -579,9 +579,9 @@ CONFIG.auto_wear_pickaxe = {]].."\n\tuse_feature = "..tostring(decode.auto_wear_
 
 CONFIG.PANDORA = true
 
-CONFIG.skip_tutorial = ]]..tostring(decode.skip_tutorial)..[[
-CONFIG.use_payy_webhook = ]]..tostring(decode.use_payy_webhook)..[[
-CONFIG.use_powershell_webhook = ]]..tostring(decode.use_powershell_webhook)..[[
+CONFIG.skip_tutorial = ]]..tostring(decode.skip_tutorial).."\n"..[[
+CONFIG.use_payy_webhook = ]]..tostring(decode.use_payy_webhook).."\n"..[[
+CONFIG.use_powershell_webhook = ]]..tostring(decode.use_powershell_webhook).."\n"..[[
 ]]
 
     local d = [[
