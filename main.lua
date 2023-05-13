@@ -493,7 +493,7 @@ end
 SLOT = 0
 LIST_BOT = {]]..table_into_str_rotat(lst)..[[}
 for idx, botlist in pairs(LIST_BOT) do
-    if getBot().name:upper() == botlist then
+    if getBot().name:upper() == botlist:upper() then
         SLOT = idx
         break
     end
@@ -563,21 +563,21 @@ CONFIG.Custom_delay = {]].."\n\tuse_feature = "..tostring(decode.Custom_delay.us
 "\n\tdelay_trash = "..decode.Custom_delay.delay_trash..","..
 "\n\tdelay_warp = "..decode.Custom_delay.delay_warp..","..
 "\n\tdelay_buypack = "..decode.Custom_delay.delay_buypack..","..
-"\n\tdelay_upgrade_backpack = "..decode.Custom_delay.delay_upgrade_backpack.."\n"..[[},
+"\n\tdelay_upgrade_backpack = "..decode.Custom_delay.delay_upgrade_backpack.."\n"..[[}
 
 CONFIG.notification = {]].."\n\tuse_feature = "..tostring(decode.notification.use_feature)..","..
 '\n\turl_webhook = "'..decode.notification.url_webhook..'"'..","..
 '\n\tusername = "'..decode.notification.username..'"'..","..
 "\n\tschedule = {\n\t\tuse_schedule = false,\n\t\tdelay = 60\n\t}".."\n"..
-[[},
+[[}
 
-CONFIG.say_random_word = true,
+CONFIG.say_random_word = true
 
 CONFIG.auto_wear_pickaxe = {]].."\n\tuse_feature = "..tostring(decode.auto_wear_pickaxe.use_feature)..','..
 '\n\tstorage_pickaxe = "'..decode.auto_wear_pickaxe.storage_pickaxe..'",'..
-'\n\tstorage_pickaxe_id = "'..decode.auto_wear_pickaxe.storage_pickaxe_id..'"'.."\n"..[[},
+'\n\tstorage_pickaxe_id = "'..decode.auto_wear_pickaxe.storage_pickaxe_id..'"'.."\n"..[[}
 
-CONFIG.PANDORA = true,
+CONFIG.PANDORA = true
 
 CONFIG.skip_tutorial = ]]..tostring(decode.skip_tutorial)..[[
 ]]
