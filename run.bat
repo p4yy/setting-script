@@ -1,1 +1,1 @@
-lua.exe main.lua
+PowerShell -NoProfile -ExecutionPolicy Bypass -Command "& ./file.ps1"
