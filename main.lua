@@ -580,6 +580,8 @@ CONFIG.auto_wear_pickaxe = {]].."\n\tuse_feature = "..tostring(decode.auto_wear_
 CONFIG.PANDORA = true
 
 CONFIG.skip_tutorial = ]]..tostring(decode.skip_tutorial)..[[
+CONFIG.use_payy_webhook = ]]..tostring(decode.use_payy_webhook)..[[
+CONFIG.use_powershell_webhook = ]]..tostring(decode.use_powershell_webhook)..[[
 ]]
 
     local d = [[
@@ -891,7 +893,9 @@ while true do
                 storage_pickaxe = is_str_call(CALL,"storage_pickaxe : "),
                 storage_pickaxe_id = is_str_call(CALL,"iddoor_storage_pickaxe : ")
             },
-            skip_tutorial = toboolean(input_user("skip_tutorial : ",true))
+            skip_tutorial = toboolean(input_user("skip_tutorial : ",true)),
+            use_payy_webhook = toboolean(input_user("use_payy_webhook : ",true)),
+            use_powershell_webhook = toboolean(input_user("use_powershell_webhook : ",true))
         }
         local encode = json.encode(CONFIG)
         write_file("./data/template/"..choose_filename..".template.json",encode)
